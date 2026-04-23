@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Tab</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0a0a0a;
+            color: white;
+            font-family: 'Impact', 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 40px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #019999;
+            text-shadow: 2px 2px 0 #000;
+        }
+        .shortcuts {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .shortcut {
+            background: #1a1a1a;
+            border: 2px solid #019999;
+            border-radius: 15px;
+            padding: 25px 20px;
+            width: 130px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.2s;
+            text-decoration: none;
+            color: white;
+        }
+        .shortcut:hover {
+            transform: translateY(-5px);
+            background: #019999;
+            color: #000;
+        }
+        .shortcut .icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .shortcut .label {
+            font-size: 1em;
+        }
+        .search-bar {
+            display: flex;
+            gap: 10px;
+            width: 500px;
+            max-width: 90%;
+        }
+        .search-bar input {
+            flex-grow: 1;
+            padding: 12px 20px;
+            border-radius: 30px;
+            border: 2px solid #019999;
+            background: #1a1a1a;
+            color: white;
+            font-size: 16px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .search-bar input:focus { outline: none; border-color: #fff; }
+        .search-bar button {
+            background: #019999;
+            color: #000;
+            border: none;
+            border-radius: 30px;
+            padding: 12px 25px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            font-family: 'Impact', sans-serif;
+        }
+        .search-bar button:hover { background: #fff; }
+    </style>
+</head>
+<body>
+    <h1>🦍 New Tab</h1>
+    
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search Google or enter URL..." onkeypress="handleSearch(event)">
+        <button onclick="doSearch()">Go</button>
+    </div>
+
+    <div class="shortcuts">
+        <div class="shortcut" onclick="navigate('https://www.google.com')">
+            <div class="icon">🔍</div>
+            <div class="label">Google</div>
+        </div>
+        <div class="shortcut" onclick="navigate('https://krunker.io')">
+            <div class="icon">🔫</div>
+            <div class="label">Krunker</div>
+        </div>
+        <div class="shortcut" onclick="navigate('https://www.youtube.com')">
+            <div class="icon">▶️</div>
+            <div class="label">YouTube</div>
+        </div>
+        <div class="shortcut" onclick="navigate('https://github.com')">
+            <div class="icon">🐙</div>
+            <div class="label">GitHub</div>
+        </div>
+        <div class="shortcut" onclick="navigate('https://dere-w4eyt.github.io/realgorillaos-site/')">
+            <div class="icon">🦍</div>
+            <div class="label">GorillaOS</div>
+        </div>
+    </div>
+
+    <script>
+        function navigate(url) {
+            window.location.href = url;
+        }
+        function doSearch() {
+            let query = document.getElementById('search-input').value.trim();
+            if (!query) return;
+            if (query.includes('.') && !query.includes(' ')) {
+                if (!query.startsWith('http')) query = 'https://' + query;
+                window.location.href = query;
+            } else {
+                window.location.href = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+            }
+        }
+        function handleSearch(e) {
+            if (e.key === 'Enter') doSearch();
+        }
+    </script>
+</body>
+</html>
