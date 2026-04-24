@@ -7,6 +7,7 @@ The official browser of **RealGorillaOS** — a Gorilla Tag themed, cross-platfo
 [![License](https://img.shields.io/badge/license-MIT-019999)](LICENSE)
 
 ![RealGorilla Browser](https://dere-w4eyt.github.io/realgorillaos-site/)
+<img width="1918" height="1033" alt="image" src="https://github.com/user-attachments/assets/39787168-defd-4779-86d6-3a7793c770ab" />
 
 ---
 
