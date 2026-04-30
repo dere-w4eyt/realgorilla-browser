@@ -2,7 +2,7 @@
 
 The official browser of **RealGorillaOS** — a Gorilla Tag themed, cross-platform web browser with built-in AI, extensions, and an app store.
 
-[![Version](https://img.shields.io/badge/version-1.2.1-019999)](https://github.com/dere-w4eyt/realgorilla-browser/releases)
+[![Version](https://img.shields.io/badge/version-1.2.2-019999)](https://github.com/dere-w4eyt/realgorilla-browser/releases)
 [![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20Linux%20%7C%20Android-019999)](https://github.com/dere-w4eyt/realgorilla-browser/releases)
 [![License](https://img.shields.io/badge/license-MIT-019999)](LICENSE)
 
@@ -13,6 +13,7 @@ The official browser of **RealGorillaOS** — a Gorilla Tag themed, cross-platfo
 - 🎨 **Two UI Themes** — Cyan jungle theme (Full) + Falkon-inspired dark theme (Lite)
 - 🗂️ **Tabbed Browsing** — Chrome-style horizontal tabs with scroll
 - 🤖 **Built-in AI** — Free chatbot powered by OpenRouter (secure Cloudflare proxy)
+- 🦍 **AI Sidebar Toggle** — Gorilla button opens AI, white arrow slides to close
 - 🧩 **Extension System** — Load extensions from ZIP files
 - 🏪 **Extensions Store** — Browse, submit, and review extensions with VirusTotal scanning
 - 🛡️ **Built-in Ad Blocker** — 60+ domains blocked with element hiding
@@ -22,6 +23,9 @@ The official browser of **RealGorillaOS** — a Gorilla Tag themed, cross-platfo
 - 📥 **Downloads Manager** — Auto-popup with file info
 - ⚙️ **Settings** — Customize homepage and search engine
 - 🆕 **New Tab Page** — Google search + quick shortcuts
+- 🌐 **Favicons** — Website icons in tabs with auto-detection
+- 📛 **Smart Tab Titles** — Shows bookmark names, not URLs
+- 🖱️ **Right-Click Context Menu** — Chrome-style with Copy, Paste, Bookmark
 - 📱 **Mobile Support** — Android APK with touch-optimized UI
 - 🐧 **Linux Support** — PPA available for Ubuntu/Debian
 - 🪶 **Lightweight Lite Edition** — Optimized for low-end hardware
@@ -32,7 +36,7 @@ The official browser of **RealGorillaOS** — a Gorilla Tag themed, cross-platfo
 
 | Platform | Version | Download |
 |----------|---------|----------|
-| 🪟 **Windows** | v1.2.1 | [Setup.exe](https://github.com/dere-w4eyt/realgorilla-browser/releases/latest) or [Portable ZIP](https://github.com/dere-w4eyt/realgorilla-browser/releases/latest) |
+| 🪟 **Windows** | v1.2.2 | [Setup.exe](https://github.com/dere-w4eyt/realgorilla-browser/releases/latest) or [Portable ZIP](https://github.com/dere-w4eyt/realgorilla-browser/releases/latest) |
 | 🐧 **Linux (PPA)** | v1.0.8 | [PPA (Recommended)](https://launchpad.net/~dere-w4eyt/+archive/ubuntu/realgorilla-browser) |
 | 🐧 **Linux (ZIP)** | v1.0.0L | [Lite Linux ZIP](https://github.com/dere-w4eyt/realgorilla-browser/releases) ⚠️ Currently corrupted — use PPA |
 | 📱 **Android** | v1.2.x | [APK](https://github.com/dere-w4eyt/realgorilla-browser/releases/latest) |
@@ -48,7 +52,7 @@ The portable Linux ZIP (`RealGorillaBrowser-Lite-Linux.zip`) is currently corrup
 ## 🚀 Quick Start
 
 ### Windows
-1. Download `RealGorillaBrowser Setup 1.2.1.exe`
+1. Download `RealGorillaBrowser Setup 1.2.2.exe`
 2. Run the installer
 3. Launch from desktop shortcut
 
@@ -100,6 +104,7 @@ npm start
 - **AI Proxy:** Cloudflare Worker hides API key
 - **Extension Scanning:** VirusTotal API on all submissions
 - **Ad Blocker:** Blocks tracking domains and removes ad elements
+- **Jailbreak Protection:** AI prompt filter blocks malicious requests
 
 ---
 
